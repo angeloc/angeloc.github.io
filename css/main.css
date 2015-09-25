@@ -9,20 +9,20 @@
 
 body {
   background-color: #f2f2f2;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
 
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #333;
 }
 
 h1 {
@@ -42,50 +42,57 @@ h4 {
 
 /* Paragraph & Typographic */
 p {
-    line-height: 28px;
-    margin-bottom: 25px;
-    font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.ellipsis p {
+	margin-bottom:10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .centered {
-    text-align: center;
+	text-align: center;
 }
 
 /* Links */
 a {
-    color: #3498db;
-    word-wrap: break-word;
+	color: #3498db;
+	word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
 }
 
 a:before,
 a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 .navbar-default {
@@ -131,15 +138,15 @@ i {
 	min-height: 600px;
 	width: 100%;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #headerwrap h1 {
@@ -148,4 +155,10 @@ i {
 	font-size: 60px;
 	font-weight: bold;
 	letter-spacing: 1px;
+}
+
+#menubutton {
+	max-height: 50px;
+	margin-top: 6px;
+	padding-top: 15px;
 }
