@@ -40,13 +40,6 @@ h4 {
 	font-size: 20px;
 }
 
-/* Paragraph & Typographic */
-p {
-	line-height: 28px;
-	margin-bottom: 25px;
-	font-size: 16px;
-}
-
 .ellipsis p {
 	margin-bottom:10px;
 	white-space: nowrap;
@@ -115,6 +108,11 @@ a:after {
 	margin-bottom: 40px;
 }
 
+.nh {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
 .form-control {
 	height: 42px;
 	font-size: 18px;
@@ -161,4 +159,14 @@ i {
 	max-height: 50px;
 	margin-top: 6px;
 	padding-top: 15px;
+}
+
+@media (max-width: 978px) {
+	#menubutton {
+		max-height: 50px;
+		margin-top: 6px;
+		padding-top: 15px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
