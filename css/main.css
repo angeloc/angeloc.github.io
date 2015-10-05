@@ -159,12 +159,38 @@ i {
 	max-height: 50px;
 	margin-top: 6px;
 	padding-top: 15px;
+	margin-left: 10px;
 }
 
 .panel-sponsor {
 	min-height: 300px;
 	text-align: justify;
 	text-justify: inter-word;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.navbar-header .collapse, .navbar-toggle {
+		display:block !important;
+	}
+	.navbar-header {
+		float:none;
+	}
+	.navbar-collapse {
+		overflow:hidden;
+	}
+	#menubutton {
+		margin-right: 40px;
+		width: 45px;
+	}
+	.text-shrink {
+		visibility: hidden;
+	}
 }
 
 @media (max-width:767px) {
@@ -177,11 +203,45 @@ i {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-	.text-shrink {
-		visibility: hidden;
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
 	}
-	.btn-shrink {
-		width: 45px;
-	}
+
+.flip-container, .front, .back {
+	width: 180px;
+	height: 180px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }
