@@ -10,7 +10,7 @@
 
 	<title>Buildroot - Making Embedded Linux Easy</title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://oss.maxcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -54,7 +54,7 @@
 
 <div class="container">
 <div class="row nh">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 
 	<div class="panel panel-primary">
 		<div class="panel-heading">Documentation</div>
@@ -62,35 +62,66 @@
 		<p>The Buildroot user manual is where you want to start reading if you
 		wish to understand how Buildroot works, or wish to change/extend/fix
 		things. It is available as:</p>
-
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="panel panel-success">
-						<div class="panel-heading">Latest stable release</div>
-						<div class="panel-body">
-							<ul>
-							<li><a href="/manual.html">Online HTML</a></li>
-							<li><a href="/downloads/manual/manual.pdf">PDF document</a></li>
-							<li><a href="/downloads/manual/manual.text">ASCII text</a></li>
-							</ul>
+		
+		<div class="row mt centered">
+			<div class="col-sm-4">
+				<div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<a href="/manual.html"><img src="images/browser.png" width="180" alt=""></a>
+						</div>
+						<div class="back">
+							<a href="/manual.html"><img src="images/browser.png" width="180" alt=""></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-6">
-					<div class="panel panel-default	">
-						<div class="panel-heading">Nightly build</div>
-						<div class="panel-body">
-							<ul>
-							<li><a href="http://nightly.buildroot.org/manual.html">Online HTML</a></li>
-							<li><a href="http://nightly.buildroot.org/manual.pdf">PDF document</a></li>
-							<li><a href="http://nightly.buildroot.org/manual.text">ASCII text</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<h3>HTML <br>
+					<a href="/manual.html">Stable</a> | 
+					<a href="http://nightly.buildroot.org/manual.html">Nightly</a>
+				</h3>
+
 			</div>
 
+			<div class="col-sm-4">
+				<div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<img src="images/pdf-icon.png" width="180" alt="">
+						</div>
+						<div class="back">
+							<img src="images/pdf-icon.png" width="180" alt="">
+						</div>
+					</div>
+				</div>
+
+				<h3>PDF <br>
+					<a href="/downloads/manual/manual.pdf">Stable</a> | 
+					<a href="http://nightly.buildroot.org/manual.pdf">Nightly</a>
+				</h3>
+
+			</div>
+
+			<div class="col-sm-4">
+				<div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<img src="images/text.png" width="180" alt="">
+						</div>
+						<div class="back">
+							<img src="images/text.png" width="180" alt="">
+						</div>
+					</div>
+				</div>
+
+				<h3>ASCII <br>
+					<a href="/downloads/manual/manual.text">Stable</a> | 
+					<a href="http://nightly.buildroot.org/manual.text">Nightly</a>
+				</h3>
+
+			</div>
+		</div>
+		
 		<p>If you find any errors (factual, grammatical, whatever) please
 		report them to us.</p>
 		</div>
@@ -105,18 +136,18 @@
 		materials freely available:</p>
 
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-8">
 					<div class="panel panel-success">
 						<div class="panel-heading">Slides preview</div>
 						<div class="panel-body">
-							<div style="width: 100%; padding-bottom: 75%; position: relative">
-							<iframe src="http://docs.google.com/gview?url=http://free-electrons.com/doc/training/buildroot/buildroot-slides.pdf&embedded=true" style="position:absolute; width:100%; height:100%; top:0; left:0;" frameborder="0"></iframe>
+							<div id="slides" style="width: 100%; padding-bottom: 75%; position: relative">
+							<a href="http://free-electrons.com/doc/training/buildroot/buildroot-slides.pdf"><img src="images/buildroot-slides.png" alt="buildroot slides" style="position:absolute; width:100%; height:100%; top:0; left:0;"></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-sm-4">
 					<div class="panel panel-default	">
 						<div class="panel-heading">Training materials</div>
 						<div class="panel-body">
@@ -136,8 +167,8 @@
 </div>
 </div>
 
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://oss.maxcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript" src="js/clipboard.min.js"></script>
 	<script type="text/javascript" src="js/buildroot.js"></script>

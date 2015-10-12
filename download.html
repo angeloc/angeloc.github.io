@@ -10,7 +10,7 @@
 
 	<title>Buildroot - Making Embedded Linux Easy</title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://oss.maxcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -54,21 +54,46 @@
 
 <div class="container">
 <div class="row nh">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 
 	<div class="panel panel-primary">
 		<div class="panel-heading">Download</div>
 		<div class="panel-body">
-		<p>The latest stable release is <b>2015.08.1</b>, which can be downloaded
-		here:<p>
+		
+			<h3 style="text-align: center;">Latest stable release: <b>2015.08.1</b></h3>
 
-		<ul>
-			<li><a href="/downloads/buildroot-2015.08.1.tar.gz">buildroot-2015.08.1.tar.gz</a>
-				(<a href="/downloads/buildroot-2015.08.1.tar.gz.sign">PGP signature</a>)</li>
-			<li><a href="/downloads/buildroot-2015.08.1.tar.bz2">buildroot-2015.08.1.tar.bz2</a>
-			(<a href="/downloads/buildroot-2015.08.1.tar.bz2.sign">PGP signature</a>)</li>
-		</ul>
-
+			<div class="row mt centered">
+				<div class="col-sm-6">
+					<div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<a href="/downloads/buildroot-2015.08.1.tar.gz"><img src="images/zip.png" width="180" alt=""></a>
+							</div>
+							<div class="back">
+								<a href="/downloads/buildroot-2015.08.1.tar.gz"><img src="images/zip.png" width="180" alt=""></a>
+							</div>
+						</div>
+					</div>
+					
+					<h3><a href="/downloads/buildroot-2015.08.1.tar.gz">buildroot-2015.08.1.tar.gz</a></h3>
+					<p><a href="/downloads/buildroot-2015.08.1.tar.gz.sign">PGP signature</a></p>
+				</div>
+				<div class="col-sm-6">
+					<div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<a href="/downloads/buildroot-2015.08.1.tar.bz2"><img src="images/package.png" width="180" alt=""></a>
+							</div>
+							<div class="back">
+								<a href="/downloads/buildroot-2015.08.1.tar.bz2"><img src="images/package.png" width="180" alt=""></a>
+							</div>
+						</div>
+					</div>
+					
+					<h3><a href="/downloads/buildroot-2015.08.1.tar.bz2">buildroot-2015.08.1.tar.bz2</a></h3>
+					<p><a href="/downloads/buildroot-2015.08.1.tar.bz2.sign">PGP signature</a></p>
+				</div>
+			</div>
 		<!--
 		<p>
 		The latest release candidate is <b>2015.08-rc2</b>, which can be
@@ -102,7 +127,7 @@ To grab a copy of the repository use</p>
 
 <div class="input-group" style="width: 100%;">
 	<input class="form-control" style="width: 85%;" id="giturl"
-		value="git clone git://git.buildroot.net/buildroot" type="text"></input>
+		value="git clone git://git.buildroot.net/buildroot" type="text" readonly></input>
 	<span class="input-group-button">
 		<button class="btn pull-right" type="button" data-clipboard-target="#giturl"
 			data-toggle="tooltip" data-placement="bottom" data-trigger="manual" title="Copied!">
@@ -117,7 +142,7 @@ To grab a copy of the repository use</p>
 
 <div class="input-group" style="width: 100%;">
 	<input class="form-control" style="width: 85%;" id="giturlhttps"
-		value="git clone https://git.buildroot.net/buildroot" type="text"></input>
+		value="git clone https://git.buildroot.net/buildroot" type="text" readonly></input>
 	<span class="input-group-button">
 		<button class="btn pull-right" type="button" data-clipboard-target="#giturlhttps"
 			data-toggle="tooltip" data-placement="bottom" data-trigger="click" title="Copied!">
@@ -185,8 +210,8 @@ Older versions can be downloaded from <a href="/downloads/">the release archive<
 </div><!--/.row -->
 </div>
 
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://oss.maxcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript" src="js/clipboard.min.js"></script>
 	<script type="text/javascript" src="js/buildroot.js"></script>

@@ -77,6 +77,8 @@ jQuery(document).ready(function($) {
     // Get the basename of the URL
     url = url.split(/[\\/]/).pop()
     $('.nav a[href="/' + url + '"]').parent().addClass('active');
+    
+    $('#slides').html('<iframe src="http://docs.google.com/gview?url=http://free-electrons.com/doc/training/buildroot/buildroot-slides.pdf&embedded=true" style="position:absolute; width:100%; height:100%; top:0; left:0;" frameborder="0"></iframe>')
 });
 
 function showTooltip(elem, msg) {
